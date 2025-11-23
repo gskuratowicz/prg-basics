@@ -6,7 +6,7 @@
 # 
 number1 = int(input('Enter first number: '))
 number2 = int(input('Enter second number: '))
-operator = input ('Enter your operator')
+operator = input ('Enter your operator: ')
 
 if operator == '+':
     result = number1 + number2
@@ -18,4 +18,4 @@ elif operator == '/':
     result = number1 / number2
 
 # print result
-print(f'Here is ur result lol: {number1} {operator} {number2} = {result}')
+print(f'Here is ur result: {number1} {operator} {number2} = {result}')

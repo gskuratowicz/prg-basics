@@ -6,13 +6,13 @@
 #
 size = input('Enter size symbol: ')
 
-if size == 'S' or 's':
+if size == 'S':
     print('S: Small size')
-elif size == 'M' or 'm':
+elif size == 'M':
     print('M: Medium size')
-elif size == 'L' or 'l':
+elif size == 'L':
     print('L: Large size')
-elif size == 'XL' or 'xl':
-    print('XL: Extra large size')
+elif size == 'XL':
+    print('L: Extra large size')
 else:
-    print('thats not a size brochacho')
+    print('Incorrect symbol.')

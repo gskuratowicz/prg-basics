@@ -4,7 +4,7 @@
 # tasks is at least 50%
 #
 total_tasks = 20
-tasks_ok = int( input('Enter amount of tasks completed correctly:') )
+tasks_ok = int( input('Enter amount of tasks completed correctly: ') )
 test_passed = False
 
 if tasks_ok >= (total_tasks/2) :

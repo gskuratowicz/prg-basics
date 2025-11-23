@@ -6,22 +6,12 @@ plain_text = 'The early bird catches the worm'
 encrypted_text = ''
 
 for char in plain_text:
-    # read the character's code (use ord())
-    
-    # add one to the character's code
-    if ord(char) != 32:
-        letter_code = ord(char)
-        encrypted_letter_code = letter_code + 1
+    if char != ' ':
+        encrypted_code = ord(char) + 1
+        new_letter_code = chr(encrypted_code)
     else:
-        letter_code = ord(char)
-        encrypted_letter_code = letter_code
-    # replace new character code with its
-    # corresponding character (use chr())
-    encrypted_letter = chr(encrypted_letter_code)
-    # add encrypted character to encrypted text
-    encrypted_text = encrypted_text + encrypted_letter
+        new_letter_code = char
+    encrypted_text += new_letter_code
 
-
-
-print(f'The message before encryption is: {plain_text}')
-print(f'The message after encryption is: {encrypted_text}')
+print(plain_text)
+print(encrypted_text)
