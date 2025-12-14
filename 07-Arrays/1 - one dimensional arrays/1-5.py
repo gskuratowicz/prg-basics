@@ -7,5 +7,5 @@ print(arr)
 arr[-1] += 4
 print(arr)
 
-arr[2] *= 2
+arr[len(arr)//2] *= 2
 print(arr)
