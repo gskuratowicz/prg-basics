@@ -11,5 +11,5 @@ with open(original_file, 'r') as file:
    content = file.read()
 
 # write the content to the target file (copy)
-with open(target_file) as file:
+with open(target_file, 'w') as file:
    file.write(content)

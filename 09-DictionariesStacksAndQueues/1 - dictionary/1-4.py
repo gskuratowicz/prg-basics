@@ -7,10 +7,17 @@ person = {
    "phone":{"landline":"123444321","mobile":"777888999"}
 }
 
-print("Name: ", person["name"] + person["surname"])
-for item in person["hobby"]:
-    print ("Hobby: ", item)
-
 person["surname"] = "Nowak"
 person["married"] = False
 person["gender"] = "Male"
+person["hobby"].append("bicycle")
+
+print("Name: ", person["name"] + " " + person["surname"])
+
+for item in person["hobby"]:
+    print ("Hobby: ", item)
+
+person["phone"]["work"] = "999888777"
+
+for key,value in person.items():
+   print(f"{key} : {value}")

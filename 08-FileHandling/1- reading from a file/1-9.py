@@ -16,7 +16,8 @@ def read_from_file(name):
 file_content = read_from_file(file)
 file_lines = file_content.splitlines()
 
+i = 1
 for line in file_lines:
-    if job_title in line == True:
-        print (line)
-        line += 1
+   if job_title in line:
+      print (f"{i}. {line}")
+      i += 1

@@ -8,17 +8,21 @@ visited_websites.put('instagram.com')
 visited_websites.put('uek.krakow.pl')
 visited_websites.put('microsoft.com')
 
+current_website = 'microsoft.com'
+
 while True:
    website = input('Enter website name (0 for back): ')
 
    if website == '0':
       if visited_websites.empty():
+         print("No previous websites to go back to.")
          break
       else:
          print('<-- Going back to a previously visited website')
-         website = ...
-   elif ... != "":
-      ...
+         website = visited_websites.get()
+   elif website != "":
+      visited_websites.put(current_website)
+      current_website = website
 
    # print name of website you are currently viewing
    print('You are currently viewing:', website)
