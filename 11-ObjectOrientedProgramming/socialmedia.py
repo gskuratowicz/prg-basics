@@ -6,4 +6,15 @@ class SocialMediaProfile:
     def add_post(self, content):
         self.posts.append(content)
         print(f"{self.username} added a new post: {content}")
-
+    
+    def display_timeline(self):
+        i = 1
+        for element in self.posts:
+            print(f"{i}. User {self.username} posted: {element}")
+            i += 1
+    
+user1 = SocialMediaProfile("johndoe")
+user1.add_post("Hello, world!")
+user1.add_post("Had a great day at the park!")
+user1.add_post("What's up Natalie? How are you?")
+user1.display_timeline()

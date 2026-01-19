@@ -11,3 +11,4 @@ bank_transactions = [-150, -20, 300, -45, -60, 500, -120]
 
 print(bubble_sort(car_fuel_consumption))
 print(bubble_sort(bank_transactions))
+print(sorted(car_fuel_consumption))
